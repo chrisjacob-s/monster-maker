@@ -8,6 +8,7 @@ from alien import Alien
 from beast import Beast
 from undead import Undead
 
+
 def main():
   print("Monster Maker\n")
 
@@ -31,5 +32,6 @@ def main():
     u = Undead()
     print(u)
     print("Add an ability:")
+
 
 main()
