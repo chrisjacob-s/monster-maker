@@ -1,6 +1,6 @@
 # Christopher Soriano and Justin Donate
 # 4/18/23
-#
+# This program allows the user to create a Monster of their choice. They can add abilities that increase the HP and Attack points of their monster.
 
 import check_input
 
