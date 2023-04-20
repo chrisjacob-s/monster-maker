@@ -7,7 +7,7 @@ import check_input
 from alien import Alien
 from beast import Beast
 from undead import Undead
-
+from fire import Fire
 
 def main():
   print("Monster Maker\n")
@@ -18,20 +18,22 @@ def main():
 
   print("")
 
+  add_ability_prompt = "Add an ability:\n1. Fire\n2. Flying\n3. Lasers\n4. Poison\n5. Quit"
+
   if choose_base == 1:
     a = Alien()
     print(a)
-    print("Add an ability:")
+    print(add_ability_prompt)
 
   elif choose_base == 2:
     b = Beast()
     print(b)
-    print("Add an ability:")
+    print(add_ability_prompt)
 
   elif choose_base == 3:
     u = Undead()
     print(u)
-    print("Add an ability:")
+    print(add_ability_prompt)
 
 
 main()
