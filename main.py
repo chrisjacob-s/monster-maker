@@ -8,6 +8,9 @@ from alien import Alien
 from beast import Beast
 from undead import Undead
 from fire import Fire
+from flying import Flying
+from lasers import Lasers
+from poison import Poison
 
 def main():
   print("Monster Maker\n")
@@ -18,22 +21,29 @@ def main():
 
   print("")
 
-  add_ability_prompt = "Add an ability:\n1. Fire\n2. Flying\n3. Lasers\n4. Poison\n5. Quit"
+  play = True
 
   if choose_base == 1:
-    a = Alien()
-    print(a)
-    print(add_ability_prompt)
-
+    monster = Alien()
   elif choose_base == 2:
-    b = Beast()
-    print(b)
-    print(add_ability_prompt)
-
+    monster = Beast()
   elif choose_base == 3:
-    u = Undead()
-    print(u)
-    print(add_ability_prompt)
+    monster = Undead()
 
+  while play == True:
+    print(monster)
+    print("Add an ability:\n1. Fire\n2. Flying\n3. Lasers\n4. Poison\n5. Quit")
+    add_ability = check_input.get_int_range("", 1, 5)
 
+    if add_ability == 1:
+      Fire(monster)
+    elif add_ability == 2:
+      Flying(monster)
+    elif add_ability == 3:
+      Lasers(monster)
+    elif add_ability == 4:
+      Poison(monster)
+    else:
+      play = False
+      
 main()
