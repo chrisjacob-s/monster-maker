@@ -48,6 +48,12 @@ def main():
       monster = Poison(monster)
       Poison(monster)
     else:
+      print("")
+      print("Your final monster is:")
+      print(f"Name: {monster.name}")
+      print(f"HP: {monster.hp}")
+      print(f"Attack: {monster.attack()}")
+      
       play = False
 
     print("")
