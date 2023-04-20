@@ -37,12 +37,16 @@ def main():
 
     if add_ability == 1:
       monster = Fire(monster)
+      Fire(monster)
     elif add_ability == 2:
       monster = Flying(monster)
+      Flying(monster)
     elif add_ability == 3:
       monster = Lasers(monster)
+      Lasers(monster)
     elif add_ability == 4:
       monster = Poison(monster)
+      Poison(monster)
     else:
       play = False
 
