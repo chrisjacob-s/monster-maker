@@ -36,14 +36,15 @@ def main():
     add_ability = check_input.get_int_range("", 1, 5)
 
     if add_ability == 1:
-      Fire(monster)
+      monster = Fire(monster)
     elif add_ability == 2:
-      Flying(monster)
+      monster = Flying(monster)
     elif add_ability == 3:
-      Lasers(monster)
+      monster = Lasers(monster)
     elif add_ability == 4:
-      Poison(monster)
+      monster = Poison(monster)
     else:
       play = False
-      
+
+    print("")
 main()
