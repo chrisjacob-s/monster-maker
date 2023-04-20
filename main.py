@@ -23,6 +23,7 @@ def main():
 
   play = True
 
+  # Different types of monsters
   if choose_base == 1:
     monster = Alien()
   elif choose_base == 2:
@@ -35,6 +36,7 @@ def main():
     print("Add an ability:\n1. Fire\n2. Flying\n3. Lasers\n4. Poison\n5. Quit")
     add_ability = check_input.get_int_range("", 1, 5)
 
+    # Different types of abilties and option to end program
     if add_ability == 1:
       monster = Fire(monster)
       Fire(monster)
@@ -57,4 +59,6 @@ def main():
       play = False
 
     print("")
+
+
 main()
